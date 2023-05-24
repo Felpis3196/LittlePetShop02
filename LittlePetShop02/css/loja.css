@@ -1,0 +1,46 @@
+#container-conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  height: 100vh;
+}
+#container-conteudo #loja-title {
+  font-family: "Lobster";
+  font-size: 50px;
+  color: #303134;
+} /*# sourceMappingURL=loja.css.map */
+
+@media (max-width: 576px){
+  #logoa {
+    margin-top: 65px;
+    padding: 0;
+    height: 120px;
+    display: flex;
+    margin-right: 40px;
+  }
+  body{background: #fff;}
+  #container-conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+  }
+  #container-conteudo img{
+    width: 90%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px){
+  body{background: #fff;}
+  #container-conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+  }
+  #container-conteudo img{
+    width: 90%;
+  }
+}

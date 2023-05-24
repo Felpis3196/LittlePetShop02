@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../css/register.css" type="text/css" />
+    <link rel="icon" href="../img/icons/download.png" type="image/png" />
+    <script src="../js/scriptCadastro.js" defer type="text/javascript   "></script>
+    <title>Little PetShop - CADASTRO</title>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <p><img src="../img/icons/telefoneBranco.png" class="icon1">+55 (14) 4002-8922</p>
+            <p><img src="../img/icons/emailBranco.png" class="icon1">petshopdomiro@gmail.com</p>
+        </div>
+    </header>
+    <nav>
+        <div id="nav">
+            <a href="../index.html" id="logoa"><img src="../img/icons/logoLaranja.png" id="logo" /></a>
+            <div id="links">
+                <ul id="primary">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="agendamento.html">Agendamento</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="loja.html">Loja</a></li>
+                </ul>
+            </div>
+            <div id="info">
+                <div id="perfil">
+                    <img src="../img/icons/usuarioBranco.png" id="icon1">
+                    <span><span>Bem Vindo!</span><br><a href="../html/login.html">Entre</a>
+                        ou
+                        <a href="../html/register.html">Cadastre-se</a></span>
+                </div>
+            </div>
+    </nav>
+
+    <div id="container">
+
+        <div id="agendamento-conteudo">
+            <div id="agendamento-1">
+                <img src="../img/imgs/cadastro-dog.jpg" alt="dog bem vindo">
+                <div id="erro"></div>
+            </div>
+            <div id="cadastro">
+                <h4>Seus dados</h4>
+                <form id="frmCadastro" name="frmCadastro">
+                    <label for="cpf">Digite seu CPF:</label>
+                    <input type="text" name="cpf" id="frmCpf" placeholder="CPF">
+                    <label for="nome-completo">Digite seu nome completo:</label>
+                    <input type="text" name="nome-completo" id="frmNomeCompleto" placeholder="Nome/Sobrenome">
+                    <br>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="nome-completo" id="frmEndereco" placeholder="Rua/Bairro/Numero">
+                    <label for="cidade" id="label-cidade">Cidade:</label>
+                    <input type="text" name="cidade" id="frmCidade" placeholder="Barra-Bonita">
+                    <br>
+                    <label for="UF">UF:</label>
+                    <input type="text" name="UF" id="frmUf" placeholder="Unidade Federativa">
+                    <label for="email" id="label-email">E-Mail:</label>
+                    <input type="text" name="email" id="frmEmail" placeholder="contato@dominio.com.br">
+                    <br>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="frmSenha" placeholder="*********">
+                    <label for="nascimento" id="label-nascimento">Data de Nascimento:</label>
+                    <input type="text" name="nascimento" id="frmNascimento" placeholder="dd/mm/aaaa">
+                    <br>
+                    <label for="fone">Telefone:</label>
+                    <input type="tel" name="fone" id="frmFone" placeholder="(14) 4002-8922">
+                
+                <h4>Dados do seu PET</h4>
+                
+                    <label for="pet-nome">Nome do PET:</label>
+                    <input type="text" name="pet-nome" id="frmPetNome" placeholder="Walter">
+                    <label for="pet-idade">Idade do PET:</label>
+                    <input type="text" name="pet-idade" id="frmPetIdade">
+                    <br>
+                    <label for="tipo">Selecione o animal</label>
+                    <select name="tipo" id="selectTipoAnimal" onchange="exibirCampoOutros()">
+                        <option value="selecione">Selecione:</option>
+                        <option value="cachorro">Cachorro</option>
+                        <option value="gato">Gato</option>
+                        <option value="capivara">Capivara</option>
+                        <option value="outros">Outros</option>
+                      </select>                   
+                      <input type="text" id="campoOutros" style="display: none;" placeholder="Digite Aqui">
+                      
+                </form>
+                <div id="btns">
+                    <button id="btnEnviar" name="btnEnviar" type="button" onclick="validarCadastro()">Enviar</button>
+                    <button id="btnResetar" name="btnResetar" type="reset" onclick="resetarDados()">Apagar</button>
+                </div>           
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <footer>
+        <div id="footer">
+            <img src="../img/icons/logoLaranja.png">
+            <ul>
+                <span>Páginas</span>
+                <li><a href="../index.html" class="footerl">Página Inicial</a></li>
+                <li><a href="agendamento.html" class="footerl">Agendamentos</a></li>
+                <li><a href="sobre.html" class="footerl">Sobre</a></li>
+                <li><a href="loja.html" class="footerl">Loja</a></li>
+                <li><a href="dashboard.html" class="footerl">Dashboard</a></li>
+                <li><a href="contato.html" class="footerl">Contato</a></li>
+            </ul>
+            <ul>
+                <span>Localização</span>
+                <li>Rua João José Sérgio - 666</li>
+                <li>Jardim Karina</li>
+                <li>Areiópolis - SP</li>
+                <li>(14) 4002-8922</li>
+            </ul>
+            <ul>
+                <span>Desenvolvido</span>
+                <li>Grupo-1</li>
+                <li>Todos direitos reservados 2023 &copy;</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

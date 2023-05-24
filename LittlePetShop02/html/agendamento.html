@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../css/formsANDinputs.css" type="text/css" />
+    <link rel="icon" href="../img/icons/download.png" type="image/png" />
+    <title>Little PetShop - SOBRE</title>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <p><img src="../img/icons/telefoneBranco.png" class="icon1">+55 (14) 4002-8922</p>
+            <p><img src="../img/icons/emailBranco.png" class="icon1">petshopdomiro@gmail.com</p>
+        </div>
+    </header>
+    <nav>
+        <div id="nav">
+            <a href="../index.html" id="logoa"><img src="../img/icons/logoLaranja.png" id="logo" /></a>
+            <div id="links">
+                <ul id="primary">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="agendamento.html">Agendamento</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="loja.html">Loja</a></li>
+                </ul>
+            </div>
+            <div id="info">
+                <div id="perfil">
+                    <img src="../img/icons/usuarioBranco.png" id="icon1">
+                    <span><span>Bem Vindo!</span><br><a href="../html/login.html">Entre</a>
+                        ou
+                        <a href="../html/register.html">Cadastre-se</a></span>
+                </div>
+            </div>
+    </nav>
+
+    <div id="container">
+
+        <div id="agendamento-conteudo">
+            <div id="agendamento-1">
+                <img src="../img/imgs/dog-bem-vindo.jpg" alt="dog bem vindo">
+                <div id="mensagem-erro">Mensagem de erro:</div>
+            </div>
+            <div id="agendamento-2">
+                <h4>Digite Seus Dados!</h4>
+                <form id="frmAgendamento" name="frmAgendamento" action="#">
+                    <label for="NomeT">Nome do tutor:</label>
+                    <input id="inNomeT" name="inNomeT" type="text" placeholder="Nome do cliente">
+                    <br>
+                    <label for="NomeA">Nome do pet:</label>
+                    <input id="inNomeA" name="inNomeA" type="text" placeholder="Nome do pet">
+                    <br>
+
+                    <input id="Outros" name="outros" type="text" placeholder="Digite o animal">
+
+                    <br>
+                    <label for="Data">Data:</label>
+                    <input id="inData" name="inData" type="date" placeholder="Data">
+                    <label for="Horario">Horário:</label>
+                    <input id="inHora" name="inHora" type="time" placeholder="Horário">
+
+                </form>
+                <div id="btns">
+                    <button id="btnEnviar" name="btnEnviar" type="button" onclick="validarAgendamento()">Enviar</button>
+                    <button id="btnResetar" name="btnResetar" type="reset" onclick="resetarDados()">Apagar</button>
+                </div>
+
+                <div id="resultado"></div>
+                
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+
+    <footer>
+        <div id="footer">
+            <img src="../img/icons/logoLaranja.png">
+            <ul>
+                <span>Páginas</span>
+                <li><a href="../index.html" class="footerl">Página Inicial</a></li>
+                <li><a href="agendamento.html" class="footerl">Agendamentos</a></li>
+                <li><a href="sobre.html" class="footerl">Sobre</a></li>
+                <li><a href="loja.html" class="footerl">Loja</a></li>
+                <li><a href="dashboard.html" class="footerl">Dashboard</a></li>
+                <li><a href="contato.html" class="footerl">Contato</a></li>
+            </ul>
+            <ul>
+                <span>Localização</span>
+                <li>Rua João José Sérgio - 666</li>
+                <li>Jardim Karina</li>
+                <li>Areiópolis - SP</li>
+                <li>(14) 4002-8922</li>
+            </ul>
+            <ul>
+                <span>Desenvolvido</span>
+                <li>Grupo-1</li>
+                <li>Todos direitos reservados 2023 &copy;</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+<script src="../js/scriptFormAgen.js" type="text/javascript"></script>
+
+</html>

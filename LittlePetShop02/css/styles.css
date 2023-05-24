@@ -1,0 +1,723 @@
+@font-face {
+  font-family: Chakra;
+  src: url(../fonts/Chakra_Petch/ChakraPetch-Regular.ttf);
+}
+@font-face {
+  font-family: Mont;
+  src: url(../fonts/Montserrat/static/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Source;
+  src: url(../fonts/Source_Code_Pro/static/SourceCodePro-Light.ttf);
+}
+@font-face {
+  font-family: Lobster;
+  src: url(../fonts/Lobster/Lobster-Regular.ttf);
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Chakra";
+  background-color: whitesmoke;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+.icon1 {
+  width: 16px;
+  padding-right: 5px;
+}
+header {
+  width: 100%;
+  height: 40px;
+  background-color: #303134;
+  display: flex;
+  justify-content: center;
+}
+header #header {
+  width: 85%;
+  border-bottom: 1px solid #f19f77;
+  background-color: inherit;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+#nav {
+  width: 100%;
+  background-color: #303134;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#nav img {
+  height: 110px;
+  margin-left: 40px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+#nav #info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+#nav #info #perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+}
+#nav #info #perfil span span {
+  padding-left: 5px;
+}
+#nav #info #perfil a {
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: underline;
+  color: #f19f77;
+}
+#nav #info #perfil #icon1 {
+  height: 30px;
+  margin-bottom: 22px;
+}
+#nav #links {
+  font-family: "Source";
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+#nav #links ul {
+  list-style-type: none;
+  display: block;
+}
+#nav #links ul :hover {
+  color: #f19f77;
+  text-decoration: underline;
+  text-shadow: 2px 0px 2px #000;
+}
+#nav #links ul li {
+  float: left;
+  padding: 30px;
+  margin-left: 40px;
+  font-size: 25px;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#container #card-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  background-color: whitesmoke;
+}
+#container #card-row #servicos-txt {
+  padding: 10px 25px;
+  border: 1px solid black !important;
+  box-shadow: 1px 1px 1px #ffa07a;
+  border-radius: 45px;
+  font-family: "Lobster";
+}
+#container #cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+#container #cards .cardi {
+  width: 120px;
+}
+#container #cards .card {
+  height: 250px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  box-shadow: 5px 3px 2px #717171;
+  font-family: "Lobster";
+  border: 3px dotted #000;
+  transition: 1s;
+}
+#container .card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  border-radius: 15px;
+  transition: all 1.5s linear 0.1s;
+}
+#container #card1:hover {
+  background-color: lightblue;
+  box-shadow: 0px 0px 9px black;
+}
+#container #card2:hover {
+  background-color: lightcoral;
+  box-shadow: 0px 0px 9px black;
+}
+#container #card3:hover {
+  background-color: lightgoldenrodyellow;
+  box-shadow: 0px 0px 9px black;
+}
+#container #card4:hover {
+  background-color: lightgreen;
+  box-shadow: 0px 0px 9px black;
+}
+#img-destaque {
+  background-image: url(../img/imgs/cagada.jpg);
+  background-position: center;
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 100%;
+  height: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#img-destaque #destaque-txt {
+  font-family: "Lobster";
+  font-size: 45px;
+  margin-left: 25px;
+}
+#img-destaque #destaque-txt span {
+  color: #f4bb9f;
+  font-size: 60px;
+}
+#img-destaque #agendamento {
+  display: flex;
+  align-items: center;
+  font-family: "Mont";
+  font-size: 25px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  height: 70px;
+}
+#img-destaque #agendamento p {
+  padding: 10px;
+  margin: 0;
+}
+#img-destaque #agendamento .example_d {
+  color: #fff !important;
+  text-transform: uppercase;
+  background: #f19f77;
+  padding: 20px;
+  border: 4px solid rgba(0, 0, 0, 0.3) !important;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+#img-destaque #agendamento .example_d:hover {
+  color: white !important;
+  border-radius: 50px;
+  border-color: #494949 !important;
+  transition: all 0.3s ease 0s;
+}
+#container-pai {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #dcd9c9;
+  font-family: "Source";
+  font-size: 30px;
+}
+#container-pai #pai-direito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#container-pai #texto-feed {
+  color: #000;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 0;
+}
+#container-pai #texto-feed span {
+  color: #ff4242;
+  text-shadow: 0px 0px 4px #ffa500;
+  font-size: 50px;
+}
+.slideshow-container {
+  position: relative;
+}
+.mySlides {
+  display: none;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#dashboard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  background-color: inherit;
+  margin: 80px;
+  height: 600px;
+  margin: 0px;
+}
+#dashboard #dashboard-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: 1s;
+}
+#dashboard #dashboard-icon img {
+  width: 350px;
+}
+#dashboard #dashboard-icon:hover {
+  box-shadow: 0px 0px 2px black;
+  padding: 15px;
+  transition: 1.5s;
+}
+#dashboard #dashboard-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lobster";
+  font-size: 40px;
+}
+#dashboard #dashboard-titulo h1 {
+  background-color: rgba(113, 113, 113, 0.6);
+  border-radius: 50%;
+}
+#animais {
+  height: 250px;
+  background-color: #bbb;
+}
+#animais #animais-img {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+#animais #animais-img span {
+  font-family: "Lobster";
+  font-size: 35px;
+  font-weight: bold;
+}
+#animais .animals {
+  width: 150px;
+}
+#contato {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+}
+#contato #ctt-btn {
+  background-color: #f4bb9f;
+  padding: 10px;
+  border-radius: 10px;
+}
+#contato #ctt1 .example_d {
+  color: #fff !important;
+  text-transform: uppercase;
+  background: #f19f77;
+  padding: 20px;
+  border: 4px solid rgba(0, 0, 0, 0.3) !important;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+#contato #ctt1 .example_d:hover {
+  color: white !important;
+  border-radius: 50px;
+  border-color: #494949 !important;
+  transition: all 0.3s ease 0s;
+}
+#contato #ctt2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer #footer {
+  width: 100%;
+  display: flex;
+  margin-bottom: auto;
+  align-items: flex-start;
+  background-color: #515153;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer #footer a:hover {
+  background-color: #bbb;
+  color: white;
+}
+footer #footer img {
+  height: 150px;
+  padding: 25px;
+}
+footer #footer ul {
+  display: block;
+  list-style: none;
+  color: #fff;
+}
+footer #footer ul span {
+  color: #f4bb9f;
+}
+footer #footer .footericon {
+  height: 20px;
+} /*# sourceMappingURL=styles.css.map */
+
+@media (max-width: 576px) {
+  #container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+  }
+  #header {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+  }
+  #container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #nav {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  #alogo {
+    margin-top: 65px;
+    padding: 0;
+    height: 120px;
+    display: flex;
+    margin-right: 40px;
+  }
+  #nav #links ul li {
+    float: unset;
+    padding: 0px;
+    padding-right: 40px;
+    margin-left: 0px;
+    font-size: 20px;
+    text-align: center;
+  }
+  #nav #links ul a {
+    margin-top: 15px;
+  }
+  #links {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #nav #info {
+    width: 50%;
+  }
+  #nav #info #perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    margin-left: 25px;
+  }
+  #nav #info #perfil a {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: underline;
+    color: #f19f77;
+  }
+  #nav #info #perfil #icon1 {
+    height: 30px;
+    margin: 0px;
+  }
+  #img-destaque {
+    background-image: url(../img/imgs/cagada.jpg);
+    background-position: center;
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #img-destaque #destaque-txt {
+    font-family: "Lobster";
+    font-size: 25px;
+    margin-left: 0px;
+    text-align: center;
+  }
+  #img-destaque #destaque-txt span {
+    font-size: 40px;
+  }
+  #img-destaque #agendamento .example_d {
+    color: #fff !important;
+    text-transform: uppercase;
+    background: #f19f77;
+    padding: 10px;
+    border: 4px solid rgba(0, 0, 0, 0.3) !important;
+    font-size: 20px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+  }
+  #img-destaque #agendamento .example_d:hover {
+    color: white !important;
+    border-radius: 50px;
+    border-color: #494949 !important;
+    transition: all 0.3s ease 0s;
+  }
+  #container #card-row {
+    align-items: center;
+  }
+  #container #cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  #container #cards .card {
+    height: 200px;
+    padding: 30px;
+    margin-top: 10px;
+  }
+
+  #container-pai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #dcd9c9;
+    font-family: "Source";
+    padding: 0;
+  }
+  #container-pai img {
+    width: 85%;
+  }
+  #container-pai #pai-direito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #container-pai #texto-feed {
+    padding: 15px;
+    margin: 0;
+  }
+  #container-pai #texto-feed span {
+    color: #ff4242;
+    text-shadow: 0px 0px 4px #ffa500;
+    font-size: 40px;
+  }
+
+  #dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: inherit;
+    margin: 80px;
+    height: 450px;
+  }
+  #dashboard #dashboard-icon img {
+    width: 200px;
+  }
+  #animais {
+    text-align: center;
+    height: 750px;
+    background-color: #bbb;
+  }
+  #animais #animais-img {
+    flex-direction: column;
+  }
+  #animais .animals {
+    width: 120px;
+  }
+  #contato {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    background-color: #fff;
+  }
+  #contato img {
+    width: 90%;
+  }
+  #contato #ctt-btn {
+    margin: 10px 0px;
+    background-color: #f4bb9f;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  #contato #ctt1 .example_d {
+    color: #fff !important;
+    text-transform: uppercase;
+    background: #f19f77;
+    padding: 20px;
+    border: 4px solid rgba(0, 0, 0, 0.3) !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+  }
+  #contato #ctt1 .example_d:hover {
+    color: white !important;
+    border-radius: 50px;
+    border-color: #494949 !important;
+    transition: all 0.3s ease 0s;
+  }
+  #contato #ctt2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer #footer {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  footer #footer a:hover {
+    background-color: #bbb;
+    color: white;
+  }
+  footer #footer img {
+    height: 150px;
+    padding: 25px;
+  }
+  footer #footer ul {
+    display: block;
+    list-style: none;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+  }
+  footer #footer ul span {
+    color: #f4bb9f;
+  }
+  footer #footer .footericon {
+    height: 20px;
+  }
+}
+@media (min-width: 577px) and (max-width: 991px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header {
+    width: 100vw;
+    height: 40px;
+    background-color: #303134;
+    display: flex;
+    justify-content: center;
+  }
+  #alogo img {
+    width: 100px;
+  }
+  #nav #info {
+    width: 40%;
+  }
+  #container #card-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    background-color: whitesmoke;
+    width: 100%;
+  }
+  #container #card-row #servicos-txt {
+    padding: 10px 25px;
+    border: 1px solid black !important;
+    box-shadow: 1px 1px 1px #ffa07a;
+    border-radius: 45px;
+    font-family: "Lobster";
+  }
+  #container #cards .cardi {
+    width: 90px;
+  }
+  #container #cards .card {
+    height: 190px;
+    width: 75px;
+  }
+  #dashboard {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: inherit;
+    margin: 40px;
+    height: 400px;
+    background-color: inherit;
+  }
+  #dashboard #dashboard-icon img {
+    width: 250px;
+  }
+  #dashboard #dashboard-titulo {
+    font-size: 35px;
+  }
+  #animais {
+    height: 250px;
+    background-color: #bbb;
+  }
+  #animais #animais-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+  }
+  #animais #animais-img span {
+    font-family: "Lobster";
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #animais .animals {
+    width: 100px;
+  }
+}

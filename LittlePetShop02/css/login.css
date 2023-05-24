@@ -1,0 +1,162 @@
+#agendamento-conteudo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 100vh;
+  }
+  #agendamento-conteudo #ctt2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #agendamento-conteudo #ctt2 p {
+    margin-top: 200px;
+    position: absolute;
+    font-family: "Lobster";
+    font-size: 40px;
+  }
+  #agendamento-conteudo #agendamento-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+  }
+  #agendamento-conteudo #agendamento-1 #erro {
+    background-color: rgba(255, 0, 0, 0.5);
+    border: 3px solid rgba(255, 0, 0, 0.9);
+    border-radius: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    text-align: center;
+    padding: 15px;
+    display: none;
+  }
+  #agendamento-conteudo #agendamento-2,
+  #agendamento-conteudo #cadastro {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    width: 50%;
+    height: 100%;
+  }
+  #agendamento-conteudo #agendamento-2 textarea,
+  #agendamento-conteudo #cadastro textarea {
+    width: 300px;
+    resize: none;
+  }
+  #agendamento-conteudo #agendamento-2 label,
+  #agendamento-conteudo #cadastro label {
+    padding: 5px;
+    border-radius: 15px;
+  }
+  #agendamento-conteudo #agendamento-2 input,
+  #agendamento-conteudo #cadastro input {
+    border: 1px solid;
+    padding: 5px;
+    margin: 10px;
+  }
+  #agendamento-conteudo #agendamento-2 h4,
+  #agendamento-conteudo #cadastro h4 {
+    font-family: "Lobster";
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  #agendamento-conteudo #agendamento-2 #label-cidade,
+  #agendamento-conteudo #cadastro #label-cidade {
+    margin-left: 36px;
+  }
+  #agendamento-conteudo #agendamento-2 #label-email,
+  #agendamento-conteudo #cadastro #label-email {
+    margin-left: 85px;
+  }
+  #agendamento-conteudo #agendamento-2 #label-nascimento,
+  #agendamento-conteudo #cadastro #label-nascimento {
+    margin-left: 59px;
+  }
+  #agendamento-conteudo #btns {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+  }
+  #agendamento-conteudo #btns #btnEnviar {
+    background-color: rgba(144, 238, 144, 0.8);
+    width: 120px;
+    padding: 5px;
+    border-radius: 15px;
+    height: 45px;
+  }
+  #agendamento-conteudo #btns #btnResetar {
+    background-color: rgba(187, 187, 187, 0.8);
+    width: 120px;
+    padding: 5px;
+    border-radius: 15px;
+    height: 45px;
+  }
+  #agendamento-conteudo form {
+    text-align: left;
+  }
+  
+  #Outros {
+    display: none;
+  }
+  
+  #btn-enviar {
+    background-color: rgba(144, 238, 144, 0.8);
+    width: 120px;
+    padding: 5px;
+    border-radius: 15px;
+    height: 45px;
+  }
+  
+  #btn-reseta {
+    background-color: rgba(187, 187, 187, 0.8);
+    width: 120px;
+    padding: 5px;
+    border-radius: 15px;
+    height: 45px;
+  } /*# sourceMappingURL=formsANDinputs.css.map */
+  
+  #tabelaAgendamentos{
+  display: none;
+  }
+  
+  @media (max-width: 576px){
+    #logoa {
+      margin-top: 65px;
+      padding: 0;
+      height: 120px;
+      display: flex;
+      margin-right: 40px;
+    }
+    #agendamento-conteudo{
+      display: flex;
+      flex-direction: column;
+    }
+    #agendamento-conteudo img{
+      width: 250px;
+    }
+    #container{
+      height: unset;
+    }
+  }
+  
+  @media (min-width: 577px) and (max-width: 991px){
+    #agendamento-conteudo{
+      display: flex;
+      flex-direction: column;
+    }
+    #agendamento-conteudo img{
+      width: 450px;
+    }
+  }
+  
